@@ -1,0 +1,16 @@
+{
+  "name": "@rill/cookies",
+  "version": "0.4.0",
+  "description": "Cookie parser and serializer for rill.",
+  "author": "Dylan Piercey <pierceydylan@gmail.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rill-js/cookies"
+  },
+  "homepage": "https://github.com/rill-js/cookies",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.3"
+  }
+}
