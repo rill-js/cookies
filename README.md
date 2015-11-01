@@ -13,17 +13,16 @@ npm install @rill/cookies
 ```javascript
 const rill = require("rill");
 const app  = rill();
-const session = require("@rill/session");
+const cookies = require("@rill/cookies");
 
+app.use(cookies());
 app.use(function (req, res, next) {
 	this.cookies.get("aCookie");
 	this.cookies.set("aCookie", 1, { path: "/", httpOnly: true });
 });
 ```
 
-# API
-**new Cookies(cookies)** - Creates a cookie getter and setter.
-
+# Cookie API
 **#get(cookie)** - Get a cookie from the parsed cookies.
 
 **#set(cookie, value, options)** - Set a cookie to be serialized later.
