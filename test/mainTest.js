@@ -1,5 +1,5 @@
 var assert  = require("assert");
-var Cookies = require("../");
+var Cookies = require("../src/cookies");
 
 describe("Cookies", function () {
 	var exampleCookie = "username=John%20Doe; expires=Thu, 28 May 2015 21:19:20 GMT; path=/";
