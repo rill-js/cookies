@@ -1,4 +1,4 @@
-var assert  = require("assert");
+var assert = require("assert");
 var Cookies = require("../index.js");
 
 describe("Cookies", function () {
@@ -28,6 +28,6 @@ describe("Cookies", function () {
 			domain: "test.com"
 		});
 
-		assert.deepEqual(cookies, "a=1;  domain=test.com;  path=/test;  expires=Tue, 28 Apr 2015 14:30:09 GMT;  max-age=1000;  httponly;  secure");
+		assert.deepEqual(cookies, "a=1; domain=test.com; path=/test; expires=Tue, 28 Apr 2015 14:30:09 GMT; max-age=1000; httponly; secure");
 	});
 });

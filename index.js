@@ -45,5 +45,5 @@ exports.serialize = function serialize (key, val, opts) {
 	}
 
 
-	return result.join(";  ");
+	return result.join("; ");
 };
