@@ -11,23 +11,17 @@ npm install @rill/cookies
 # Example
 
 ```javascript
-const rill = require("rill");
-const app  = rill();
-const cookies = require("@rill/cookies");
+var { parse, serialize } = require("@rill/cookies");
 
-app.use(cookies());
-app.use(function (req, res, next) {
-	this.cookies.get("aCookie");
-	this.cookies.set("aCookie", 1, { path: "/", httpOnly: true });
-});
+parse("a=1"); // -> { a: 1 }
+serialize("a", 1, { httpOnly: true }); // "a=1; httponly"
 ```
 
-# Cookie API
-**#get(cookie)** - Get a cookie from the parsed cookies.
+# API
 
-**#set(cookie, value, options)** - Set a cookie to be serialized later.
+**parse(cookie)** - Parse a cookie string into an object.
 
-**#serialize()** - Returns an array of set-cookie strings.
+**serialize(cookie, value, options)** - Turn a cookie with options into a string.
 
 ### Contributions
 
