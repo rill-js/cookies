@@ -1,4 +1,5 @@
-var cookieReg  = / *([^=;]+) *= ? *([^;]+)?/g;
+"use strict";
+var cookieReg = / *([^=;]+) *= ? *([^;]+)?/g;
 
 /**
  * Parses a cookie string into an object.
@@ -8,7 +9,7 @@ var cookieReg  = / *([^=;]+) *= ? *([^;]+)?/g;
  */
 exports.parse = function parse (cookie) {
 	var result = {};
-	var key, val;
+	var m, key, val;
 	if (typeof cookie !== "string") return result;
 
 	while (m = cookieReg.exec(cookie)) {
