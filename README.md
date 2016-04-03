@@ -1,3 +1,5 @@
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 # Rill Cookies
 A cookie parser and serializer used internally for Rill.
 
@@ -11,7 +13,7 @@ npm install @rill/cookies
 # Example
 
 ```javascript
-var { parse, serialize } = require("@rill/cookies");
+const { parse, serialize } = require("@rill/cookies");
 
 parse("a=1"); // -> { a: 1 }
 serialize("a", 1, { httpOnly: true }); // "a=1; httponly"
@@ -25,6 +27,6 @@ serialize("a", 1, { httpOnly: true }); // "a=1; httponly"
 
 ### Contributions
 
-* Use gulp to run tests.
+* Use `npm test` to run tests.
 
 Please feel free to create a PR!
