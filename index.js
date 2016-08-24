@@ -45,7 +45,7 @@ exports.serialize = function serialize (key, val, opts) {
         opts.expires.toUTCString
           ? opts.expires.toUTCString()
           : opts.expires
-      ))
+        ))
     }
     if (opts.maxAge) {
       result.push('max-age=' + (opts.maxAge | 0))
