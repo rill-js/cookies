@@ -27,6 +27,8 @@
   </a>
 </h1>
 
+## DEPRECATED: Rill now uses [jshttp/cookie](https://github.com/jshttp/cookie).
+
 A cookie parser and serializer used internally for Rill that works isomorphically.
 
 # Installation
